@@ -15,8 +15,10 @@ echo ""
 read $n
 
 RepoDirectory=$(dirname $PWD)
-pushd $RepoDirectory
+cd $RepoDirectory
 
 git clone git@github.com:Confuzed/HomeServerConfiguration.git
 
-popd
+cd HomeServerConfiguration
+
+echo "You can now proceed to run the confguration script on this server..."
